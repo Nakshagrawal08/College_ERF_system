@@ -50,9 +50,9 @@ const studentSlice = createSlice({
             })
             .addCase(saveStudent.rejected, (state, action) => {
                 state.status = "failed"
-                console.log("payload",action.payload)
+                console.log("payload",action.status)
                 state.message = action.payload.message
-                return state
+                return state.message
             })
             
     }
