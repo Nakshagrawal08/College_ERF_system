@@ -11,6 +11,7 @@ const Register = () => {
         firstName: '',
         lastName: '',
         dob: '',
+        
     });
     const dispatch = useDispatch()
     const studentState = useSelector(state => state.student)
